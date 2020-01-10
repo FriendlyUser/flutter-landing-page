@@ -22,7 +22,7 @@ matrix:
       skip_cleanup: true
       on:
         tags: false
-  - name: Android Build
+  - name: Web Build
     language: android
     jdk: openjdk8
     before_script:
