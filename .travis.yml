@@ -1,0 +1,43 @@
+matrix:
+  include:
+  - name: Android Build
+    language: android
+    jdk: openjdk8
+    android:
+      components:
+      - build-tools-28.0.3
+      - android-28
+    before_script:
+    - git clone https://github.com/flutter/flutter.git -b stable
+    - export PATH=`pwd`/flutter/bin:`pwd`/flutter/bin/cache/dart-sdk/bin:$PATH
+    script:
+    - ls
+    - flutter packages get
+    - flutter test || true
+    - flutter build apk
+    deploy:
+      provider: releases
+      api_key: $GITHUB_TOKEN
+      file: "build/app/outputs/apk/release/app-release.apk"
+      skip_cleanup: true
+      on:
+        tags: false
+  - name: Android Build
+    language: android
+    jdk: openjdk8
+    before_script:
+    - git clone https://github.com/flutter/flutter.git -b master
+    - export PATH=`pwd`/flutter/bin:`pwd`/flutter/bin/cache/dart-sdk/bin:$PATH
+    script:
+    - flutter channel master
+    - flutter upgrade
+    - flutter config --enable-web
+    - flutter packages get
+    - flutter test || true
+    - flutter build web
+    - ls
+    deploy:
+      provider: pages
+      token: $GITHUB_TOKEN
+      local_dir: "build/web"
+      skip_cleanup: true
