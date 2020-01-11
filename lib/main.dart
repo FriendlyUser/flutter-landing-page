@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_webpage/LandingPage/LandingPage.dart';
+import 'package:flutter_webpage/LandingPage/AnimatedIcon.dart';
 import 'package:flutter_webpage/Navbar/Navbar.dart';
-import 'package:flutter_webpage/Stats/Stats.dart';
 
 void main() => runApp(MyApp());
 class MyApp extends StatelessWidget  {
@@ -41,7 +41,7 @@ class MyHomePage extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.symmetric(
                     vertical: 20.0, horizontal: 40.0),
-                child: Stats(),
+                child: AnimatedIcon(),
               )
             ],
           ),
