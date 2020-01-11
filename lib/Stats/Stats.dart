@@ -54,7 +54,7 @@ class Stats extends StatelessWidget {
           );
         } else {
           return Column(
-            mainAxisAlignment: MainAxisAlignment.left,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: pageChildren(constraints.biggest.width),
           );
         }
