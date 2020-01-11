@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_webpage/LandingPage/LandingPage.dart';
 import 'package:flutter_webpage/Navbar/Navbar.dart';
+import 'package:flutter_webpage/Stats/Stats.dart';
 
 void main() => runApp(MyApp());
 
@@ -37,6 +38,11 @@ class MyHomePage extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(
                     vertical: 20.0, horizontal: 40.0),
                 child: LandingPage(),
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(
+                    vertical: 20.0, horizontal: 40.0),
+                child: (),
               )
             ],
           ),
