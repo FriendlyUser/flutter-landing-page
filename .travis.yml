@@ -33,7 +33,7 @@ matrix:
     - flutter upgrade
     - flutter config --enable-web
     - flutter packages get
-    - flutter test || true
+    - flutter test
     - flutter build web
     - ls
     deploy:
