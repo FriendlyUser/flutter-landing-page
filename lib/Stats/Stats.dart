@@ -5,7 +5,6 @@ class Stats extends StatefulWidget with SingleTickerProviderStateMixin {
   AnimationController controller;
   @override
   void initState() {
-    super.initState();
     controller =
         AnimationController(duration: const Duration(seconds: 2), vsync: this);
     // #docregion addListener
@@ -35,6 +34,5 @@ class Stats extends StatefulWidget with SingleTickerProviderStateMixin {
   @override
   void dispose() {
     controller.dispose();
-    super.dispose();
   }
 }
