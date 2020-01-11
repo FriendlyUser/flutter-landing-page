@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/animation.dart';
-class AnimatedIcon extends StatefulWidget {
-  _AnimatedIconState createState() => _AnimatedIconState();
+class LandingIcon extends StatefulWidget {
+  _LandingIconState createState() => _LandingIconState();
 }
 
-class _AnimatedIconState  extends State<AnimatedIcon> with SingleTickerProviderStateMixin {
+class _LandingIconState  extends State<LandingIcon> with SingleTickerProviderStateMixin {
   Animation<double> animation;
   AnimationController controller;
   @override
