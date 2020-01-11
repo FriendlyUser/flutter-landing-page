@@ -1,10 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/animation.dart';
-class Stats extends StatefulWidget with SingleTickerProviderStateMixin {
+class Stats extends StatefulWidget {
+  _StatsState createState() => _StatsState();
+}
+
+class _StatsState  extends State<Stats> with SingleTickerProviderStateMixin {
   Animation<double> animation;
   AnimationController controller;
   @override
   void initState() {
+    super.initState();
     controller =
         AnimationController(duration: const Duration(seconds: 2), vsync: this);
     // #docregion addListener
@@ -34,5 +39,6 @@ class Stats extends StatefulWidget with SingleTickerProviderStateMixin {
   @override
   void dispose() {
     controller.dispose();
+    super.dispose();
   }
 }

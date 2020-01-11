@@ -4,7 +4,6 @@ import 'package:flutter_webpage/Navbar/Navbar.dart';
 import 'package:flutter_webpage/Stats/Stats.dart';
 
 void main() => runApp(MyApp());
-
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
