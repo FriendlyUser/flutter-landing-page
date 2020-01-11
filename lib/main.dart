@@ -42,7 +42,7 @@ class MyHomePage extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.symmetric(
                     vertical: 20.0, horizontal: 40.0),
-                child: (),
+                child: Stats(),
               )
             ],
           ),
