@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_webpage/LandingPage/LandingIcon.dart';
 
 class LandingPage extends StatelessWidget {
   List<Widget> pageChildren(double width) {
@@ -41,7 +42,7 @@ class LandingPage extends StatelessWidget {
       ),
       Padding(
         padding: const EdgeInsets.symmetric(vertical: 20.0),
-        child: AnimatedIcon()
+        child: LandingIcon()
       )
     ];
   }
