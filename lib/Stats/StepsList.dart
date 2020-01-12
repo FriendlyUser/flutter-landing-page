@@ -9,7 +9,7 @@ class _StepsListState extends State<StepsList> {
   @override
   Widget build(BuildContext build) {
     return Container(
-      child: Row(
+      child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
           ListTile(
