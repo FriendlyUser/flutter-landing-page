@@ -79,7 +79,7 @@ class _StepsListState extends State<StepsList> {
                 Container(),
           ),
         ]
-      )
+      );
     )
   }
 }
