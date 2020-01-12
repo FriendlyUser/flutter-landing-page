@@ -60,23 +60,35 @@ class _BasicCardState extends State<BasicCard> {
               steps: [
                 Step(
                   title: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
-                      children: <Widget>[
-                        Icon(
-                          Icons.favorite,
-                          color: Colors.pink,
-                          size: 24.0,
-                          semanticLabel: 'Text to announce in accessibility modes',
-                        ),
-                        Text("League of Legends"),
-                      ]
-                    ),
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: <Widget>[
+                      Icon(
+                        Icons.phone_android,
+                        color: Colors.red,
+                        size: 24.0,
+                        semanticLabel: 'Announcement Icon',
+                      ),
+                      Text("Mobile First Design"),
+                    ]
+                  ),
                   // redo with icon and text?
-                  content: Text("This is our first example."),
+                  content: Text("Committing to great user experiences on all devices and all on platforms."),
                 ),
                 Step(
-                  title: Text("Second"),
-                  content: Text("This is our second example."),
+                  title: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: <Widget>[
+                      Icon(
+                        Icons.shop,
+                        color: Colors.red,
+                        size: 24.0,
+                        semanticLabel: 'Announcement Icon',
+                      ),
+                      Text("High Quality Services"),
+                    ]
+                  ),
+                  // redo with icon and text?
+                  content: Text("Providing Value To All Our Customers"),
                 ),
                 Step(
                   title: Text("Third"),
