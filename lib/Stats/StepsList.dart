@@ -6,8 +6,6 @@ class StepsList extends StatefulWidget {
 
 class _StepsListState extends State<StepsList> {
   var _index = 0;
-  var screenSize = MediaQuery.of(context).size;
-  var width = screenSize.width;
   List<Widget> pageChildren(double width) {
     return <Widget>[
       Container(
