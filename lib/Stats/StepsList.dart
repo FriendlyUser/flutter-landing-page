@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+
 class StepsList extends StatefulWidget {
-  _BasicCardState createState() => _BasicCardState();
+  _StepsListState createState() => _StepsListState();
 }
 
-class _StepsState extends State<StepsList> {
+class _StepsListState extends State<StepsList> {
   var _index = 0;
   @override
   Widget build(BuildContext build) {
