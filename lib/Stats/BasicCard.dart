@@ -46,7 +46,6 @@ class _BasicCardState extends State<BasicCard> {
         ),
       ),
       Container(
-        width: width,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
