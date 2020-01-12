@@ -56,7 +56,6 @@ class _BasicCardState extends State<BasicCard> {
               ),
             ),
             Stepper(
-              type: StepperType.horizontal,
               steps: [
                 Step(
                   title: Row(
@@ -116,7 +115,7 @@ class _BasicCardState extends State<BasicCard> {
               controlsBuilder: (BuildContext context,
                       {VoidCallback onStepContinue, VoidCallback onStepCancel}) =>
                   Container(),
-            )
+            ),
           ],
         ),
       ),
