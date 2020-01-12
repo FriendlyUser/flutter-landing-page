@@ -3,7 +3,7 @@ import 'package:flutter_webpage/LandingPage/LandingPage.dart';
 import 'package:flutter_webpage/LandingPage/LandingIcon.dart';
 import 'package:flutter_webpage/Navbar/Navbar.dart';
 import 'package:flutter_webpage/Stats/BasicCard.dart';
-import 'package:flutter_webpage/Stats/StepsList.dart'
+import 'package:flutter_webpage/Stats/StepsList.dart';
 void main() => runApp(MyApp());
 class MyApp extends StatelessWidget  {
   @override
