@@ -48,8 +48,11 @@ class _BasicCardState extends State<BasicCard> {
       Container(
         width: width,
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
-            Text('TFT RISE OF THE ELEMENTS'),
+            Flexible(
+              Text('TFT RISE OF THE ELEMENTS'),
+            )
             Stepper(
               steps: [
                 Step(
