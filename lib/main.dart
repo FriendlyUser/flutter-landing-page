@@ -11,7 +11,13 @@ class MyApp extends StatelessWidget  {
     return MaterialApp(
       title: 'Sample Flutter Website',
       theme: ThemeData(primarySwatch: Colors.blue, fontFamily: "Montserrat"),
-      home: MyHomePage(),
+      initialRoute: '/',
+      routes: {
+        // When navigating to the "/" route, build the FirstScreen widget.
+        '/': (context) => MyHomePage(),
+        // When navigating to the "/second" route, build the SecondScreen widget.
+        '/second': (context) => MyHomePage(),
+      },
     );
   }
 }
@@ -26,8 +32,8 @@ class MyHomePage extends StatelessWidget {
               begin: Alignment.centerLeft,
               end: Alignment.centerRight,
               colors: [
-                Color.fromRGBO(195, 20, 50, 1.0),
-                Color.fromRGBO(36, 11, 54, 1.0)
+                Color.fromRGBO(90, 58, 0, 1.0),
+                Color.fromRGBO(49, 195, 20, 1.0)
               ]),
         ),
         child: SingleChildScrollView(
