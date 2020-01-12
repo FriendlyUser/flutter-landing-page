@@ -68,7 +68,7 @@ class _BasicCardState extends State<BasicCard> {
                         size: 24.0,
                         semanticLabel: 'Announcement Icon',
                       ),
-                      Text("Mobile First Design"),
+                      Text(" Mobile First Design"),
                     ]
                   ),
                   // redo with icon and text?
@@ -84,19 +84,27 @@ class _BasicCardState extends State<BasicCard> {
                         size: 24.0,
                         semanticLabel: 'Announcement Icon',
                       ),
-                      Text("High Quality Services"),
+                      Text(" High Quality Services"),
                     ]
                   ),
                   // redo with icon and text?
                   content: Text("Providing Value To All Our Customers"),
                 ),
                 Step(
-                  title: Text("Third"),
-                  content: Text("This is our third example."),
-                ),
-                Step(
-                  title: Text("Forth"),
-                  content: Text("This is our forth example."),
+                  title: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: <Widget>[
+                      Icon(
+                        Icons.account_balance,
+                        color: Colors.red,
+                        size: 24.0,
+                        semanticLabel: 'Announcement Icon',
+                      ),
+                      Text(" Cheaper"),
+                    ]
+                  ),
+                  // redo with icon and text?
+                  content: Text("Providing Affordable software Development"),
                 ),
               ],
               currentStep: _index,
