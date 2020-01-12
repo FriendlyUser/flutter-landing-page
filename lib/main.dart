@@ -8,7 +8,7 @@ class MyApp extends StatelessWidget  {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Sample Flutter Website',
       theme: ThemeData(primarySwatch: Colors.blue, fontFamily: "Montserrat"),
       home: MyHomePage(),
     );
@@ -38,11 +38,6 @@ class MyHomePage extends StatelessWidget {
                     vertical: 20.0, horizontal: 40.0),
                 child: LandingPage(),
               ),
-              Padding(
-                padding: const EdgeInsets.symmetric(
-                    vertical: 20.0, horizontal: 40.0),
-                child: LandingIcon(),
-              )
             ],
           ),
         ),

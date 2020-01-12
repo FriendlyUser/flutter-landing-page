@@ -36,6 +36,7 @@ matrix:
     - flutter test
     - flutter build web
     - ls
+    - cp pubspec.yaml build/web || true
     deploy:
       provider: pages
       token: $GITHUB_TOKEN

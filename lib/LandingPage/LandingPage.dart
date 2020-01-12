@@ -9,12 +9,29 @@ class LandingPage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            Text(
-              "Website \nDevelopers",
-              style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 40.0,
-                  color: Colors.white),
+            Row(
+                mainAxisSize: MainAxisSize.min,
+                children: <Widget>[
+                  SizedBox(width: 20.0, height: 100.0),
+                  Text(
+                    "Website",
+                    style: TextStyle(
+                      fontSize: 40.0,
+                      fontWeight: fontWeight.bold
+                      color: Colors.white),
+                  ),
+                  SizedBox(width: 20.0, height: 100.0),
+                  RotateAnimatedTextKit(
+                    onTap: () {
+                      print("Tap Event");
+                    },
+                    text: ["Developers", "Engineers", "Designers"],
+                    textStyle: TextStyle(fontSize: 40.0, color: Colors.white, fontFamily: "Horizon"),
+                    textAlign: TextAlign.start,
+                    alignment: AlignmentDirectional.topStart // or Alignment.topLeft
+                  ),
+                ],
+              ),
             ),
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 20.0),
