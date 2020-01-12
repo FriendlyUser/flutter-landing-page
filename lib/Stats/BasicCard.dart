@@ -42,80 +42,75 @@ class _BasicCardState extends State<BasicCard> {
                 )
               ),
             ),
-           DecoratedBox(
-              decoration: BoxDecoration(
-                gradient: RadialGradient(
-                  center: const Alignment(-0.5, -0.6),
-                  radius: 0.15,
-                  colors: <Color>[
-                    const Color(0xFFEEEEEE),
-                    const Color(0xFF111133),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: <Widget>[
+                FlatButton(
+                  child: const Text('BUY TICKETS'),
+                  onPressed: () { /* ... */ },
+                ),
+                Stepper(
+                  steps: [
+                    Step(
+                      title: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: <Widget>[
+                          Icon(
+                            Icons.phone_android,
+                            color: Colors.red,
+                            size: 24.0,
+                            semanticLabel: 'Announcement Icon',
+                          ),
+                          Text(" Mobile First Design"),
+                        ]
+                      ),
+                      // redo with icon and text?
+                      content: Text("Committing to great user experiences on all devices and all on platforms."),
+                    ),
+                    Step(
+                      title: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: <Widget>[
+                          Icon(
+                            Icons.shop,
+                            color: Colors.red,
+                            size: 24.0,
+                            semanticLabel: 'Announcement Icon',
+                          ),
+                          Text(" High Quality Services"),
+                        ]
+                      ),
+                      // redo with icon and text?
+                      content: Text("Providing Value To All Our Customers"),
+                    ),
+                    Step(
+                      title: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: <Widget>[
+                          Icon(
+                            Icons.account_balance,
+                            color: Colors.red,
+                            size: 24.0,
+                            semanticLabel: 'Announcement Icon',
+                          ),
+                          Text(" Cheap and Affordable"),
+                        ]
+                      ),
+                      // redo with icon and text?
+                      content: Text("Providing Affordable software Development"),
+                    ),
                   ],
-                  stops: <double>[0.9, 1.0],
-                ),
-              ),
-            ),
-            // row this?
-            Stepper(
-              steps: [
-                Step(
-                  title: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: <Widget>[
-                      Icon(
-                        Icons.phone_android,
-                        color: Colors.red,
-                        size: 24.0,
-                        semanticLabel: 'Announcement Icon',
-                      ),
-                      Text(" Mobile First Design"),
-                    ]
-                  ),
-                  // redo with icon and text?
-                  content: Text("Committing to great user experiences on all devices and all on platforms."),
-                ),
-                Step(
-                  title: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: <Widget>[
-                      Icon(
-                        Icons.shop,
-                        color: Colors.red,
-                        size: 24.0,
-                        semanticLabel: 'Announcement Icon',
-                      ),
-                      Text(" High Quality Services"),
-                    ]
-                  ),
-                  // redo with icon and text?
-                  content: Text("Providing Value To All Our Customers"),
-                ),
-                Step(
-                  title: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: <Widget>[
-                      Icon(
-                        Icons.account_balance,
-                        color: Colors.red,
-                        size: 24.0,
-                        semanticLabel: 'Announcement Icon',
-                      ),
-                      Text(" Cheap and Affordable"),
-                    ]
-                  ),
-                  // redo with icon and text?
-                  content: Text("Providing Affordable software Development"),
-                ),
-              ],
-              currentStep: _index,
-              onStepTapped: (index) {
-                setState(() {
-                  _index = index;
-                });
-              },
-              controlsBuilder: (BuildContext context,
-                      {VoidCallback onStepContinue, VoidCallback onStepCancel}) =>
-                  Container(),
+                  currentStep: _index,
+                  onStepTapped: (index) {
+                    setState(() {
+                      _index = index;
+                    });
+                  },
+                  controlsBuilder: (BuildContext context,
+                          {VoidCallback onStepContinue, VoidCallback onStepCancel}) =>
+                      Container(),
+                )
+              ]
             )
           ],
         ),
