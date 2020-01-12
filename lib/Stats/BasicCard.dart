@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 
-class BasicCard extends StatelessWidget {
- 
+class BasicCard extends StatefulWidget {
+  _BasicCardState createState() => _BasicCardState();
+}
+
+class BasicCardState extends State<BasicCard> {
   @override
   List<Widget> pageChildren(double width) {
     return <Widget>[
