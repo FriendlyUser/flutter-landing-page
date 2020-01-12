@@ -23,11 +23,9 @@ class LandingPage extends StatelessWidget {
                 ),
                 SizedBox(width: 20.0, height: 100.0),
                 RotateAnimatedTextKit(
-                  onTap: () {
-                    print("Tap Event");
-                  },
+                  onTap: () {},
                   text: ["Developers", "Engineers", "Designers"],
-                  textStyle: TextStyle(fontSize: 40.0, color: Colors.white, fontFamily: "Horizon"),
+                  textStyle: TextStyle(fontSize: 40.0, color: Colors.white),
                   textAlign: TextAlign.start,
                   alignment: AlignmentDirectional.topStart // or Alignment.topLeft
                 ),
