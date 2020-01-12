@@ -100,7 +100,7 @@ class _BasicCardState extends State<BasicCard> {
                         size: 24.0,
                         semanticLabel: 'Announcement Icon',
                       ),
-                      Text(" Cheaper"),
+                      Text(" Cheap and Affordable"),
                     ]
                   ),
                   // redo with icon and text?
