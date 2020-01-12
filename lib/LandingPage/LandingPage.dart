@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_webpage/LandingPage/LandingIcon.dart';
+import 'package:animated_text_kit/animated_text_kit.dart';
 
 class LandingPage extends StatelessWidget {
   List<Widget> pageChildren(double width) {
@@ -17,7 +18,7 @@ class LandingPage extends StatelessWidget {
                   "Website",
                   style: TextStyle(
                     fontSize: 40.0,
-                    fontWeight: fontWeight.bold
+                    fontWeight: FontWeight.bold,
                     color: Colors.white),
                 ),
                 SizedBox(width: 20.0, height: 100.0),
