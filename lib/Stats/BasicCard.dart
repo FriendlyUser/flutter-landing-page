@@ -60,7 +60,7 @@ class _BasicCardState extends State<BasicCard> {
               steps: [
                 Step(
                   title: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: <Widget>[
                         Icon(
                           Icons.favorite,
