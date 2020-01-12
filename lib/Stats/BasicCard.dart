@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class Basic extends StatelessWidget {
+class BasicCard extends StatelessWidget {
  
   @override
   List<Widget> pageChildren(double width) {
