@@ -50,9 +50,11 @@ class _BasicCardState extends State<BasicCard> {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
-            Flexible(
-              Text('TFT RISE OF THE ELEMENTS'),
-            )
+            ListTile(
+              leading: Icon(Icons.album),
+              title: Text('The Enchanted Nightingale'),
+              subtitle: Text('Music by Julie Gable. Lyrics by Sidney Stein.'),
+            ),
             Stepper(
               steps: [
                 Step(
