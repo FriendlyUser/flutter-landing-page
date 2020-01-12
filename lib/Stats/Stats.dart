@@ -4,7 +4,7 @@ class Stats extends StatefulWidget {
   _StatsState createState() => _StatsState();
 }
 
-class _StatsState  extends State<Stats> with SingleTickerProviderStateMixin {
+class _StatsState extends State<Stats> with SingleTickerProviderStateMixin {
   Animation<double> animation;
   AnimationController controller;
   @override
@@ -28,7 +28,6 @@ class _StatsState  extends State<Stats> with SingleTickerProviderStateMixin {
   Widget build(BuildContext context) {
     return Center(
       child: Container(
-        margin: EdgeInsets.symmetric(vertical: 10),
         height: animation.value,
         width: animation.value,
         child: FlutterLogo(),

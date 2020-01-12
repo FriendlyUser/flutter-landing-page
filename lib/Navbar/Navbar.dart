@@ -27,7 +27,7 @@ class DesktopNavbar extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
             Text(
-              "RetroPortal Studio",
+              "Flutter Site",
               style: TextStyle(
                   fontWeight: FontWeight.bold,
                   color: Colors.white,

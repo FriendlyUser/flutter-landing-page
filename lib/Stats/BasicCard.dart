@@ -55,10 +55,23 @@ class _BasicCardState extends State<BasicCard> {
                 ),
               ),
             ),
+            // row this?
             Stepper(
               steps: [
                 Step(
-                  title: Text("First"),
+                  title: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround
+                      children: <Widget>[
+                        Icon(
+                          Icons.favorite,
+                          color: Colors.pink,
+                          size: 24.0,
+                          semanticLabel: 'Text to announce in accessibility modes',
+                        ),
+                        Text("League of Legends"),
+                      ]
+                    ),
+                  // redo with icon and text?
                   content: Text("This is our first example."),
                 ),
                 Step(
