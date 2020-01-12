@@ -44,7 +44,11 @@ class MyHomePage extends StatelessWidget {
                     vertical: 20.0, horizontal: 40.0),
                 child: BasicCard()
               ),
-              StepsList()
+              Padding(
+                padding: const EdgeInsets.symmetric(
+                    vertical: 20.0, horizontal: 40.0),
+                child: StepsList(),
+              ),
             ],
           ),
         ),

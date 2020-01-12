@@ -13,7 +13,7 @@ matrix:
     script:
     - ls
     - flutter packages get
-    - flutter test || true
+    - flutter test
     - flutter build apk
     deploy:
       provider: releases
@@ -33,7 +33,7 @@ matrix:
     - flutter upgrade
     - flutter config --enable-web
     - flutter packages get
-    - flutter test || true
+    - flutter test
     - flutter build web
     - ls
     - cp pubspec.yaml build/web || true
