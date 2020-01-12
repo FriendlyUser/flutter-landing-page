@@ -49,6 +49,35 @@ class BasicCard extends StatelessWidget {
                   stops: <double>[0.9, 1.0],
                 ),
               ),
+            ),
+            Stepper(
+              steps: [
+                Step(
+                  title: Text("First"),
+                  content: Text("This is our first example."),
+                ),
+                Step(
+                  title: Text("Second"),
+                  content: Text("This is our second example."),
+                ),
+                Step(
+                  title: Text("Third"),
+                  content: Text("This is our third example."),
+                ),
+                Step(
+                  title: Text("Forth"),
+                  content: Text("This is our forth example."),
+                ),
+              ],
+              currentStep: _index,
+              onStepTapped: (index) {
+                setState(() {
+                  _index = index;
+                });
+              },
+              controlsBuilder: (BuildContext context,
+                      {VoidCallback onStepContinue, VoidCallback onStepCancel}) =>
+                  Container(),
             )
           ],
         ),
