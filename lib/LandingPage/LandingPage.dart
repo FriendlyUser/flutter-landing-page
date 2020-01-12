@@ -22,7 +22,7 @@ class LandingPage extends StatelessWidget {
                     color: Colors.white),
                 ),
                 SizedBox(width: 20.0, height: 100.0),
-                RotateAnimatedTextKit(
+                ScaleAnimatedTextKit(
                   onTap: () {},
                   text: ["Developers", "Engineers", "Designers"],
                   textStyle: TextStyle(fontSize: 40.0, color: Colors.white),
