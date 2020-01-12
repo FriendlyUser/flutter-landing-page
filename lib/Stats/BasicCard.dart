@@ -4,7 +4,7 @@ class BasicCard extends StatefulWidget {
   _BasicCardState createState() => _BasicCardState();
 }
 
-class BasicCardState extends State<BasicCard> {
+class _BasicCardState extends State<BasicCard> {
   @override
   List<Widget> pageChildren(double width) {
     return <Widget>[
