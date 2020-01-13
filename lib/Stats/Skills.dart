@@ -55,7 +55,18 @@ class Skills extends StatelessWidget {
           ),
           Container(
             width: 160.0,
-            color: Colors.yellow,
+            // color: Colors.yellow,
+            child: Column(
+              children: <Widget>[
+                Icon(
+                  Icons.poll,
+                  color: Colors.orange,
+                  size: 72.0,
+                  semanticLabel: 'Planned Development',
+                ),
+                Text(" Performing Market Analysis", textAlign: TextAlign.center)
+              ]
+            )
           ),
           Container(
             width: 160.0,
