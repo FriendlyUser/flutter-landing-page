@@ -68,10 +68,6 @@ class Skills extends StatelessWidget {
               ]
             )
           ),
-          Container(
-            width: 160.0,
-            color: Colors.orange,
-          ),
         ],
       ),
     );
