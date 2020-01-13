@@ -10,7 +10,7 @@ class Skills extends StatelessWidget {
         children: <Widget>[
           Container(
             width: 160.0,
-            color: Colors.red,
+            // color: Colors.red,
             child: Column(
               children: <Widget>[
                 Icon(
@@ -19,13 +19,13 @@ class Skills extends StatelessWidget {
                   size: 72.0,
                   semanticLabel: 'Skills Icon',
                 ),
-                Text(" Skilled in Java and Mobile Development in React Native")
+                Text(" Skilled in Java and Mobile Development in React Native", textAlign: TextAlign.center)
               ]
             )
           ),
           Container(
             width: 160.0,
-            color: Colors.blue,
+            // color: Colors.blue,
             child: Column(
               children: <Widget>[
                 Icon(
@@ -34,13 +34,24 @@ class Skills extends StatelessWidget {
                   size: 72.0,
                   semanticLabel: 'Planned Development',
                 ),
-                Text(" Planned Software Development")
+                Text(" Planned Software Development", textAlign: TextAlign.center)
               ]
             )
           ),
           Container(
             width: 160.0,
-            color: Colors.green,
+            // color: Colors.green,
+            child: Column(
+              children: <Widget>[
+                Icon(
+                  Icons.new_releases,
+                  color: Colors.black,
+                  size: 72.0,
+                  semanticLabel: 'Planned Development',
+                ),
+                Text(" Releasing New Products", textAlign: TextAlign.center)
+              ]
+            )
           ),
           Container(
             width: 160.0,
