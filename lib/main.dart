@@ -3,6 +3,8 @@ import 'package:flutter_webpage/LandingPage/LandingPage.dart';
 import 'package:flutter_webpage/LandingPage/LandingIcon.dart';
 import 'package:flutter_webpage/Navbar/Navbar.dart';
 import 'package:flutter_webpage/Stats/BasicCard.dart';
+import 'package:flutter_webpage/Stats/Skills.dart';
+import 'package:flutter_webpage/Stats/Wrapping.dart';
 
 void main() => runApp(MyApp());
 class MyApp extends StatelessWidget  {
@@ -33,7 +35,7 @@ class MyHomePage extends StatelessWidget {
               end: Alignment.centerRight,
               colors: [
                 Color.fromRGBO(90, 58, 0, 1.0),
-                Color.fromRGBO(49, 195, 20, 1.0)
+                Color.fromRGBO(49, 145, 20, 1.0)
               ]),
         ),
         child: SingleChildScrollView(
@@ -49,6 +51,16 @@ class MyHomePage extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(
                     vertical: 20.0, horizontal: 40.0),
                 child: BasicCard()
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(
+                    vertical: 20.0, horizontal: 40.0),
+                child: Skills()
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(
+                    vertical: 20.0, horizontal: 40.0),
+                child: Wrapping()
               ),
             ],
           ),

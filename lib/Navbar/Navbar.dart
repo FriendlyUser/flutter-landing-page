@@ -57,7 +57,7 @@ class DesktopNavbar extends StatelessWidget {
                   width: 30,
                 ),
                 MaterialButton(
-                  color: Colors.pink,
+                  color: Colors.blue,
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.all(Radius.circular(20.0))),
                   onPressed: () {},
