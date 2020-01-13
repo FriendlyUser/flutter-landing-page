@@ -35,12 +35,8 @@ class _LandingIconState  extends State<LandingIcon> with SingleTickerProviderSta
           boxShadow: [
             BoxShadow(
               color: Colors.blue,
-              blurRadius: 20.0, // has the effect of softening the shadow
-              spreadRadius: 5.0, // has the effect of extending the shadow
-              offset: Offset(
-                10.0, // horizontal, move right 10
-                10.0, // vertical, move down 10
-              ),
+              blurRadius: 1.0, // has the effect of softening the shadow
+              spreadRadius: 1.2 // has the effect of extending the shadow
             )
           ],
         ),
