@@ -15,7 +15,7 @@ class Skills extends StatelessWidget {
               children: <Widget>[
                 Icon(
                   Icons.android,
-                  color: Colors.red,
+                  color: Colors.blue,
                   size: 72.0,
                   semanticLabel: 'Skills Icon',
                 ),
@@ -30,7 +30,7 @@ class Skills extends StatelessWidget {
               children: <Widget>[
                 Icon(
                   Icons.developer_board,
-                  color: Colors.blue,
+                  color: Colors.green,
                   size: 72.0,
                   semanticLabel: 'Planned Development',
                 ),
