@@ -23,6 +23,6 @@ class Wrapping extends StatelessWidget {
           label: Text('Laurens'),
         ),
       ],
-    )
+    );
   }
 }
