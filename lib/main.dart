@@ -54,12 +54,12 @@ class MyHomePage extends StatelessWidget {
               ),
               Padding(
                 padding: const EdgeInsets.symmetric(
-                    vertical: 20.0, horizontal: 40.0),
+                    vertical: 20.0, horizontal: 60.0),
                 child: Skills()
               ),
               Padding(
                 padding: const EdgeInsets.symmetric(
-                    vertical: 20.0, horizontal: 40.0),
+                    vertical: 20.0, horizontal: 60.0),
                 child: Wrapping()
               ),
             ],

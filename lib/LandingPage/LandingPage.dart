@@ -48,7 +48,7 @@ class LandingPage extends StatelessWidget {
                     vertical: 20.0, horizontal: 40.0),
                 child: Text(
                   "Our Packages",
-                  style: TextStyle(color: Colors.red),
+                  style: TextStyle(color: Colors.blue),
                 ),
               ),
             )

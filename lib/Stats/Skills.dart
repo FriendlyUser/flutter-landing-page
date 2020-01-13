@@ -11,10 +11,32 @@ class Skills extends StatelessWidget {
           Container(
             width: 160.0,
             color: Colors.red,
+            child: Column(
+              children: <Widget>[
+                Icon(
+                  Icons.android,
+                  color: Colors.red,
+                  size: 72.0,
+                  semanticLabel: 'Skills Icon',
+                ),
+                Text(" Skilled in Java and Mobile Development in React Native")
+              ]
+            )
           ),
           Container(
             width: 160.0,
             color: Colors.blue,
+            child: Column(
+              children: <Widget>[
+                Icon(
+                  Icons.developer_board,
+                  color: Colors.blue,
+                  size: 72.0,
+                  semanticLabel: 'Planned Development',
+                ),
+                Text(" Planned Software Development")
+              ]
+            )
           ),
           Container(
             width: 160.0,
