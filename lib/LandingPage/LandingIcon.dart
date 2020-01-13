@@ -31,6 +31,19 @@ class _LandingIconState  extends State<LandingIcon> with SingleTickerProviderSta
         margin: EdgeInsets.symmetric(vertical: 10),
         height: animation.value,
         width: animation.value,
+        decoration: new BoxDecoration(
+          boxShadow: [
+            BoxShadow(
+              color: Colors.blue,
+              blurRadius: 20.0, // has the effect of softening the shadow
+              spreadRadius: 5.0, // has the effect of extending the shadow
+              offset: Offset(
+                10.0, // horizontal, move right 10
+                10.0, // vertical, move down 10
+              ),
+            )
+          ],
+        ),
         child: FlutterLogo(),
       ),
     );
