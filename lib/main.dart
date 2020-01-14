@@ -5,6 +5,7 @@ import 'package:flutter_webpage/Navbar/Navbar.dart';
 import 'package:flutter_webpage/Stats/BasicCard.dart';
 import 'package:flutter_webpage/Stats/Skills.dart';
 import 'package:flutter_webpage/Stats/Wrapping.dart';
+import 'package:flutter_webpage/Stats/SkillsWrap.dart';
 
 void main() => runApp(MyApp());
 class MyApp extends StatelessWidget  {
@@ -62,6 +63,11 @@ class MyHomePage extends StatelessWidget {
                     vertical: 20.0, horizontal: 60.0),
                 child: Wrapping()
               ),
+              Padding(
+                padding: const EdgeInserts.symmetric(
+                  vertical: 20.0, horizontal: 60.0),
+                child: SkillsWrap()
+              )
             ],
           ),
         ),
