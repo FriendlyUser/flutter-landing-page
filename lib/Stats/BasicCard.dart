@@ -56,11 +56,11 @@ class _BasicCardState extends State<BasicCard> {
                         size: 24.0,
                         semanticLabel: 'Announcement Icon',
                       ),
-                      Text(" Mobile First Design", color: Colors.white),
+                      Text(" Mobile First Design", style: TextStyle(color: Colors.white)),
                     ]
                   ),
                   // redo with icon and text?
-                  content: Text("Committing to great user experiences on all devices and all on platforms.", color: Colors.white),
+                  content: Text("Committing to great user experiences on all devices and all on platforms.", style: TextStyle(color: Colors.white)),
                 ),
                 Step(
                   title: Row(
@@ -72,11 +72,11 @@ class _BasicCardState extends State<BasicCard> {
                         size: 24.0,
                         semanticLabel: 'Announcement Icon',
                       ),
-                      Text(" High Quality Services", color: Colors.white),
+                      Text(" High Quality Services", style: TextStyle(color: Colors.white)),
                     ]
                   ),
                   // redo with icon and text?
-                  content: Text("Providing Value To All Our Customers", color: Colors.white),
+                  content: Text("Providing Value To All Our Customers", style: TextStyle(color: Colors.white)),
                 ),
                 Step(
                   title: Row(
@@ -88,11 +88,11 @@ class _BasicCardState extends State<BasicCard> {
                         size: 24.0,
                         semanticLabel: 'Announcement Icon',
                       ),
-                      Text(" Cheap and Affordable", color: Colors.white),
+                      Text(" Cheap and Affordable", style: TextStyle(color: Colors.white)),
                     ]
                   ),
                   // redo with icon and text?
-                  content: Text("Providing Affordable software Development", color: Colors.white),
+                  content: Text("Providing Affordable software Development", style: TextStyle(color: Colors.white)),
                 ),
               ],
               currentStep: _index,
