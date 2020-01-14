@@ -95,7 +95,7 @@ class MyHomePage extends StatelessWidget {
                 child: Wrapping()
               ),
               Padding(
-                padding: const EdgeInserts.symmetric(
+                padding: const EdgeInsets.symmetric(
                   vertical: 20.0, horizontal: 60.0),
                 child: SkillsWrap()
               )
