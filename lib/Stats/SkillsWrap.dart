@@ -3,7 +3,7 @@ class SkillsWrap extends StatelessWidget {
   @override 
   Widget build(BuildContext build) {
     return Wrap(
-      spacing: 8.0, // gap between adjacent chips
+      spacing: 32.0, // gap between adjacent chips
       runSpacing: 64.0, // gap between lines
       children: <Widget>[
         Container(
