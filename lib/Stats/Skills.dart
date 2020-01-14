@@ -19,7 +19,9 @@ class Skills extends StatelessWidget {
                   size: 72.0,
                   semanticLabel: 'Skills Icon',
                 ),
-                Text(" Skilled in Java and Mobile Development in React Native", textAlign: TextAlign.center)
+                Text(" Skilled in Java and Mobile Development in React Native",
+                color: Colors.white,
+                textAlign: TextAlign.center)
               ]
             )
           ),
@@ -34,7 +36,10 @@ class Skills extends StatelessWidget {
                   size: 72.0,
                   semanticLabel: 'Planned Development',
                 ),
-                Text(" Planned Software Development", textAlign: TextAlign.center)
+                Text(" Planned Software Development",
+                  textAlign: TextAlign.center,
+                  color: Colors.white
+                )
               ]
             )
           ),
@@ -49,7 +54,10 @@ class Skills extends StatelessWidget {
                   size: 72.0,
                   semanticLabel: 'Planned Development',
                 ),
-                Text(" Releasing New Products", textAlign: TextAlign.center)
+                Text(" Releasing New Products",
+                  textAlign: TextAlign.center,
+                  color: Colors.white
+                )
               ]
             )
           ),
@@ -64,7 +72,7 @@ class Skills extends StatelessWidget {
                   size: 72.0,
                   semanticLabel: 'Planned Development',
                 ),
-                Text(" Performing Market Analysis", textAlign: TextAlign.center)
+                Text(" Performing Market Analysis", color: Colors.white, textAlign: TextAlign.center)
               ]
             )
           ),

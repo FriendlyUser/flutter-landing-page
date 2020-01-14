@@ -56,11 +56,11 @@ class _BasicCardState extends State<BasicCard> {
                         size: 24.0,
                         semanticLabel: 'Announcement Icon',
                       ),
-                      Text(" Mobile First Design"),
+                      Text(" Mobile First Design", color: Colors.white),
                     ]
                   ),
                   // redo with icon and text?
-                  content: Text("Committing to great user experiences on all devices and all on platforms."),
+                  content: Text("Committing to great user experiences on all devices and all on platforms.", color: Colors.white),
                 ),
                 Step(
                   title: Row(
@@ -72,11 +72,11 @@ class _BasicCardState extends State<BasicCard> {
                         size: 24.0,
                         semanticLabel: 'Announcement Icon',
                       ),
-                      Text(" High Quality Services"),
+                      Text(" High Quality Services", color: Colors.white),
                     ]
                   ),
                   // redo with icon and text?
-                  content: Text("Providing Value To All Our Customers"),
+                  content: Text("Providing Value To All Our Customers", color: Colors.white),
                 ),
                 Step(
                   title: Row(
@@ -88,11 +88,11 @@ class _BasicCardState extends State<BasicCard> {
                         size: 24.0,
                         semanticLabel: 'Announcement Icon',
                       ),
-                      Text(" Cheap and Affordable"),
+                      Text(" Cheap and Affordable", color: Colors.white),
                     ]
                   ),
                   // redo with icon and text?
-                  content: Text("Providing Affordable software Development"),
+                  content: Text("Providing Affordable software Development", color: Colors.white),
                 ),
               ],
               currentStep: _index,
