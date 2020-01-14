@@ -28,7 +28,6 @@ class MyApp extends StatelessWidget  {
 class SecondPage extends StatelessWidget {
   @override 
   Widget build(BuildContext context) {
-    Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
         decoration: BoxDecoration(
@@ -56,6 +55,7 @@ class SecondPage extends StatelessWidget {
     );
   }
 }
+
 class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
