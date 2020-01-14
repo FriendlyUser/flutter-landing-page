@@ -4,10 +4,10 @@ class SkillsWrap extends StatelessWidget {
   Widget build(BuildContext build) {
     return Wrap(
       spacing: 8.0, // gap between adjacent chips
-      runSpacing: 32.0, // gap between lines
+      runSpacing: 64.0, // gap between lines
       children: <Widget>[
         Container(
-          width: 160.0,
+          width: 200.0,
           // color: Colors.red,
           child: Column(
             children: <Widget>[
@@ -17,14 +17,17 @@ class SkillsWrap extends StatelessWidget {
                 size: 72.0,
                 semanticLabel: 'Skills Icon',
               ),
-              Text(" Skilled in Java and Mobile Development in React Native",
-              style: TextStyle(color: Colors.white),
-              textAlign: TextAlign.center)
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 20.0),
+                child: Text(" Skilled in Java and Mobile Development in React Native",
+                  style: TextStyle(color: Colors.white),
+                  textAlign: TextAlign.center)
+              ),
             ]
           )
         ),
         Container(
-          width: 160.0,
+          width: 200.0,
           color: Colors.purple,
           child: Column(
             children: <Widget>[
@@ -34,14 +37,17 @@ class SkillsWrap extends StatelessWidget {
                 size: 72.0,
                 semanticLabel: 'Skills Icon',
               ),
-              Text(" Skilled in Java and Mobile Development in React Native",
-              style: TextStyle(color: Colors.white),
-              textAlign: TextAlign.center)
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 20.0),
+                child: Text(" Skilled in Java and Mobile Development in React Native",
+                  style: TextStyle(color: Colors.white),
+                  textAlign: TextAlign.center)
+              ),
             ]
           )
         ),
         Container(
-          width: 160.0,
+          width: 200.0,
           // color: Colors.red,
           child: Column(
             children: <Widget>[
@@ -51,9 +57,12 @@ class SkillsWrap extends StatelessWidget {
                 size: 72.0,
                 semanticLabel: 'Skills Icon',
               ),
-              Text(" Skilled in Java and Mobile Development in React Native",
-              style: TextStyle(color: Colors.white),
-              textAlign: TextAlign.center)
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 20.0),
+                child: Text(" Skilled in Java and Mobile Development in React Native",
+                  style: TextStyle(color: Colors.white),
+                  textAlign: TextAlign.center)
+              ),
             ]
           )
         ),
