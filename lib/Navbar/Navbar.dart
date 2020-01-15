@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-
+import 'package:flutter_webpage/main.dart';
+import 'package:flutter_webpage/Routes/route.dart'
 class Navbar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -37,7 +38,8 @@ class DesktopNavbar extends StatelessWidget {
               children: <Widget>[
                 GestureDetector(
                   onTap: () {
-                    Navigator.pushNamed(context, "/");
+                    Navigator.push(context,
+                      EnterExitRoute(exitPage: this, enterPage: MyHomePage()))
                   },
                   child: Text(
                     "Home",
@@ -67,7 +69,8 @@ class DesktopNavbar extends StatelessWidget {
                       borderRadius: BorderRadius.all(Radius.circular(20.0))),
                   onPressed: () {
                     // Navigate to the second screen using a named route.
-                    Navigator.pushNamed(context, '/second');
+                    Navigator.push(context,
+                      EnterExitRoute(exitPage: this, enterPage: SecondPage()))
                   },
                   child: Text(
                     "Get Started",
