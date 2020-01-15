@@ -39,7 +39,7 @@ class DesktopNavbar extends StatelessWidget {
                 GestureDetector(
                   onTap: () {
                     Navigator.push(context,
-                      ScaleRotateRoute(MyHomePage()));
+                      ScaleRotateRoute(page: MyHomePage()));
                   },
                   child: Text(
                     "Home",
@@ -70,7 +70,7 @@ class DesktopNavbar extends StatelessWidget {
                   onPressed: () {
                     // Navigate to the second screen using a named route.
                     Navigator.push(context,
-                      ScaleRotateRoute(SecondPage()));
+                      ScaleRotateRoute(page: SecondPage()));
                   },
                   child: Text(
                     "Get Started",
@@ -103,9 +103,15 @@ class MobileNavbar extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                Text(
-                  "Home",
-                  style: TextStyle(color: Colors.white),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(context,
+                      ScaleRotateRoute(page: MyHomePage()));
+                  },
+                  child: Text(
+                    "Home",
+                    style: TextStyle(color: Colors.white),
+                  )
                 ),
                 SizedBox(
                   width: 30,
