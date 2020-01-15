@@ -39,7 +39,7 @@ class DesktopNavbar extends StatelessWidget {
                 GestureDetector(
                   onTap: () {
                     Navigator.push(context,
-                      ScaleRotateRoute(exitPage: this, enterPage: MyHomePage()));
+                      ScaleRotateRoute(MyHomePage()));
                   },
                   child: Text(
                     "Home",
@@ -70,7 +70,7 @@ class DesktopNavbar extends StatelessWidget {
                   onPressed: () {
                     // Navigate to the second screen using a named route.
                     Navigator.push(context,
-                      ScaleRotateRoute(exitPage: this, enterPage: SecondPage()));
+                      ScaleRotateRoute(SecondPage()));
                   },
                   child: Text(
                     "Get Started",
