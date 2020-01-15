@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_webpage/main.dart';
-import 'package:flutter_webpage/Routes/route.dart'
+import 'package:flutter_webpage/Routes/route.dart';
 class Navbar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
