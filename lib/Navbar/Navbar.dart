@@ -68,7 +68,7 @@ class DesktopNavbar extends StatelessWidget {
                   onPressed: () {
                     // Navigate to the second screen using a named route.
                     Navigator.pushNamed(context, '/second');
-                  }
+                  },
                   child: Text(
                     "Get Started",
                     style: TextStyle(color: Colors.white),
