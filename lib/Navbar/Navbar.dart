@@ -35,9 +35,14 @@ class DesktopNavbar extends StatelessWidget {
             ),
             Row(
               children: <Widget>[
-                Text(
-                  "Home",
-                  style: TextStyle(color: Colors.white),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.pushNamed(context, "/");
+                  },
+                  child: Text(
+                    "Home",
+                    style: TextStyle(color: Colors.white),
+                  )
                 ),
                 SizedBox(
                   width: 30,
@@ -60,7 +65,10 @@ class DesktopNavbar extends StatelessWidget {
                   color: Colors.blue,
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.all(Radius.circular(20.0))),
-                  onPressed: () {},
+                  onPressed: () {
+                    // Navigate to the second screen using a named route.
+                    Navigator.pushNamed(context, '/second');
+                  }
                   child: Text(
                     "Get Started",
                     style: TextStyle(color: Colors.white),
