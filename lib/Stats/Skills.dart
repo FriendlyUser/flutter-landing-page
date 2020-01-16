@@ -13,11 +13,14 @@ class Skills extends StatelessWidget {
             // color: Colors.red,
             child: Column(
               children: <Widget>[
-                Icon(
-                  Icons.android,
-                  color: Colors.blue,
-                  size: 72.0,
-                  semanticLabel: 'Skills Icon',
+                Padding(
+                  padding: EdgeInsets.all(16.0),
+                  child: Icon(
+                    Icons.android,
+                    color: Colors.blue,
+                    size: 72.0,
+                    semanticLabel: 'Skills Icon',
+                  ),
                 ),
                 Text(" Skilled in Java and Mobile Development in React Native",
                 style: TextStyle(color: Colors.white),
