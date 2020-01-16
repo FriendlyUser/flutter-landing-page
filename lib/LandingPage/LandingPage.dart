@@ -10,10 +10,10 @@ class LandingPage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            Row(
-              mainAxisSize: MainAxisSize.min,
+            Wrap(
+              spacing: 20.0, // gap between adjacent chips
+              runSpacing: 12.0, // gap between lines
               children: <Widget>[
-                SizedBox(width: 20.0, height: 100.0),
                 Text(
                   "Website",
                   style: TextStyle(
@@ -21,7 +21,6 @@ class LandingPage extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                     color: Colors.white),
                 ),
-                SizedBox(width: 20.0, height: 100.0),
                 ScaleAnimatedTextKit(
                   onTap: () {},
                   text: ["Developers", "Engineers", "Designers"],
