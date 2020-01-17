@@ -3,7 +3,7 @@ class SkillsWrap extends StatelessWidget {
   @override 
   Widget build(BuildContext build) {
     return Wrap(
-      spacing: 32.0, // gap between adjacent chips
+      spacing: 64.0, // gap between adjacent chips
       runSpacing: 64.0, // gap between lines
       children: <Widget>[
         Container(
@@ -12,12 +12,8 @@ class SkillsWrap extends StatelessWidget {
               boxShadow: [
                 BoxShadow(
                   color: Colors.white,
-                  blurRadius: 5.0, // soften the shadow
-                  spreadRadius: 5.0, //extend the shadow
-                  offset: Offset(
-                    5.0, // Move to right 10  horizontally
-                    5.0, // Move to bottom 10 Vertically
-                  ),
+                  blurRadius: 2.0, // soften the shadow
+                  spreadRadius: 2.0, //extend the shadow
                 )
               ],
           ),
@@ -28,7 +24,7 @@ class SkillsWrap extends StatelessWidget {
                   left: 0,
                   top: 20,
                   right: 0,
-                  bottom: 20,
+                  bottom: 10,
                 ),
                 child: Icon(
                   Icons.android,
@@ -40,7 +36,7 @@ class SkillsWrap extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 20.0),
                 child: Text(" Skilled in Java and Mobile Development in React Native",
-                  style: TextStyle(color: Colors.blue),
+                  style: TextStyle(color: Colors.black),
                   textAlign: TextAlign.center)
               ),
             ]
@@ -48,7 +44,15 @@ class SkillsWrap extends StatelessWidget {
         ),
         Container(
           width: 200.0,
-          color: Colors.purple,
+          decoration: new BoxDecoration(
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.white,
+                  blurRadius: 2.0, // soften the shadow
+                  spreadRadius: 2.0, //extend the shadow
+                )
+              ],
+          ),
           child: Column(
             children: <Widget>[
               Icon(
@@ -68,7 +72,15 @@ class SkillsWrap extends StatelessWidget {
         ),
         Container(
           width: 200.0,
-          // color: Colors.red,
+          decoration: new BoxDecoration(
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.white,
+                  blurRadius: 2.0, // soften the shadow
+                  spreadRadius: 2.0, //extend the shadow
+                )
+              ],
+          ),
           child: Column(
             children: <Widget>[
               Icon(
