@@ -9,13 +9,13 @@ class SkillsWrap extends StatelessWidget {
         Container(
           width: 200.0,
           decoration: new BoxDecoration(
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.white,
-                  blurRadius: 2.0, // soften the shadow
-                  spreadRadius: 2.0, //extend the shadow
-                )
-              ],
+            boxShadow: [
+              BoxShadow(
+                color: Colors.white,
+                blurRadius: 2.0, // soften the shadow
+                spreadRadius: 2.0, //extend the shadow
+              )
+            ],
           ),
           child: Column(
             children: <Widget>[
@@ -45,27 +45,28 @@ class SkillsWrap extends StatelessWidget {
         Container(
           width: 200.0,
           decoration: new BoxDecoration(
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.white,
-                  blurRadius: 2.0, // soften the shadow
-                  spreadRadius: 2.0, //extend the shadow
-                )
-              ],
+            boxShadow: [
+              BoxShadow(
+                color: Colors.white,
+                blurRadius: 2.0, // soften the shadow
+                spreadRadius: 2.0, //extend the shadow
+              )
+            ],
           ),
           child: Column(
             children: <Widget>[
               Icon(
                 Icons.cloud_download,
-                color: Colors.white,
+                color: Colors.blue,
                 size: 72.0,
                 semanticLabel: 'Clouds Icon',
               ),
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 20.0),
                 child: Text(" Experienced in Creating and Deployed Cloud Native Applications",
-                  style: TextStyle(color: Colors.white),
-                  textAlign: TextAlign.center)
+                  style: TextStyle(color: Colors.black),
+                  textAlign: TextAlign.center
+                )
               ),
             ]
           )
@@ -92,8 +93,9 @@ class SkillsWrap extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 20.0),
                 child: Text(" Securing Applications",
-                  style: TextStyle(color: Colors.white),
-                  textAlign: TextAlign.center)
+                  style: TextStyle(color: Colors.black),
+                  textAlign: TextAlign.center
+                )
               ),
             ]
           )
