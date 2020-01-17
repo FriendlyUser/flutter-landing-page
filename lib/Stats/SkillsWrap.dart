@@ -8,7 +8,7 @@ class SkillsWrap extends StatelessWidget {
       children: <Widget>[
         Container(
           width: 200.0,
-          // color: Colors.red,
+          color: Colors.white,
           child: Column(
             children: <Widget>[
               Padding(
@@ -17,7 +17,7 @@ class SkillsWrap extends StatelessWidget {
                   top: 20,
                   right: 0,
                   bottom: 20,
-                )
+                ),
                 child: Icon(
                   Icons.android,
                   color: Colors.blue,
