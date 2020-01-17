@@ -52,7 +52,7 @@ class _BasicCardState extends State<BasicCard> {
                     children: <Widget>[
                       Icon(
                         Icons.phone_android,
-                        color: Colors.red,
+                        color: Colors.white,
                         size: 24.0,
                         semanticLabel: 'Announcement Icon',
                       ),
@@ -68,7 +68,7 @@ class _BasicCardState extends State<BasicCard> {
                     children: <Widget>[
                       Icon(
                         Icons.shop,
-                        color: Colors.red,
+                        color: Colors.white,
                         size: 24.0,
                         semanticLabel: 'Announcement Icon',
                       ),
@@ -84,7 +84,7 @@ class _BasicCardState extends State<BasicCard> {
                     children: <Widget>[
                       Icon(
                         Icons.account_balance,
-                        color: Colors.red,
+                        color: Colors.white,
                         size: 24.0,
                         semanticLabel: 'Announcement Icon',
                       ),

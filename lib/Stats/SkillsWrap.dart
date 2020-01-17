@@ -9,6 +9,19 @@ class SkillsWrap extends StatelessWidget {
         Container(
           width: 200.0,
           color: Colors.white,
+          decoration: new BoxDecoration(
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.blue,
+                  blurRadius: 5.0, // soften the shadow
+                  spreadRadius: 5.0, //extend the shadow
+                  offset: Offset(
+                    5.0, // Move to right 10  horizontally
+                    5.0, // Move to bottom 10 Vertically
+                  ),
+                )
+              ],
+          ),
           child: Column(
             children: <Widget>[
               Padding(
@@ -28,7 +41,7 @@ class SkillsWrap extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 20.0),
                 child: Text(" Skilled in Java and Mobile Development in React Native",
-                  style: TextStyle(color: Colors.white),
+                  style: TextStyle(color: Colors.black),
                   textAlign: TextAlign.center)
               ),
             ]

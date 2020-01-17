@@ -14,12 +14,7 @@ class Skills extends StatelessWidget {
             child: Column(
               children: <Widget>[
                 Padding(
-                  padding: EdgeInsets.only(
-                    left: 40,
-                    top: 20,
-                    right: 40,
-                    bottom: 20,
-                  ),
+                  padding: EdgeInsets.all(16.0),
                   child: Icon(
                     Icons.android,
                     color: Colors.blue,
