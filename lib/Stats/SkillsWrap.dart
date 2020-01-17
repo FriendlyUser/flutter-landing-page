@@ -8,11 +8,10 @@ class SkillsWrap extends StatelessWidget {
       children: <Widget>[
         Container(
           width: 200.0,
-          color: Colors.white,
           decoration: new BoxDecoration(
               boxShadow: [
                 BoxShadow(
-                  color: Colors.blue,
+                  color: Colors.white,
                   blurRadius: 5.0, // soften the shadow
                   spreadRadius: 5.0, //extend the shadow
                   offset: Offset(
