@@ -40,7 +40,7 @@ class SkillsWrap extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 20.0),
                 child: Text(" Skilled in Java and Mobile Development in React Native",
-                  style: TextStyle(color: Colors.black),
+                  style: TextStyle(color: Colors.blue),
                   textAlign: TextAlign.center)
               ),
             ]
