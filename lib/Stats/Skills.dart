@@ -23,7 +23,7 @@ class Skills extends StatelessWidget {
                   ),
                 ),
                 Text(" Skilled in Java and Mobile Development in React Native",
-                style: TextStyle(color: Colors.white),
+              style: TextStyle(color: Colors.white),
                 textAlign: TextAlign.center)
               ]
             )
