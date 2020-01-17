@@ -11,11 +11,19 @@ class SkillsWrap extends StatelessWidget {
           // color: Colors.red,
           child: Column(
             children: <Widget>[
-              Icon(
-                Icons.android,
-                color: Colors.blue,
-                size: 72.0,
-                semanticLabel: 'Skills Icon',
+              Padding(
+                padding: EdgeInsets.only(
+                  left: 0,
+                  top: 20,
+                  right: 0,
+                  bottom: 20,
+                )
+                child: Icon(
+                  Icons.android,
+                  color: Colors.blue,
+                  size: 72.0,
+                  semanticLabel: 'Skills Icon',
+                ),
               ),
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 20.0),
