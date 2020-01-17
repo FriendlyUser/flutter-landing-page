@@ -85,8 +85,18 @@ class MyHomePage extends StatelessWidget {
               ),
               Padding(
                 padding: const EdgeInsets.symmetric(
+                    vertical: 5.0, horizontal: 60.0),
+                child: Text(" Programming Languages", style: TextStyle(color: Colors.white, fontSize: 30.0))
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(
                     vertical: 20.0, horizontal: 60.0),
                 child: ProgrammingList()
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(
+                    vertical: 5.0, horizontal: 60.0),
+                child: Text(" Skills", style: TextStyle(color: Colors.white, fontSize: 30.0))
               ),
               Padding(
                 padding: const EdgeInsets.symmetric(
